@@ -17,5 +17,9 @@ class SegonActivity : AppCompatActivity() {
         binding.btnSegonActivity.setOnClickListener{
             startActivity(Intent(this, PrimerActivity::class.java))
         }
+
+        binding.btnToMain.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 }

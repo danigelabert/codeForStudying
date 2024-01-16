@@ -17,5 +17,6 @@ class PrimerActivity : AppCompatActivity() {
         binding.btnMainActivity.setOnClickListener {
             startActivity(Intent(this, SegonActivity::class.java))
         }
+
     }
 }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.danigelabert.codeforstudying.FirstFragment"
+        android:label="FirstFragment" >
+        <action
+            android:id="@+id/action_firstFragment_to_segonFragment"
+            app:destination="@id/segonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segonFragment"
+        android:name="com.danigelabert.codeforstudying.SegonFragment"
+        android:label="fragment_segon"
+        tools:layout="@layout/fragment_segon" >
+        <action
+            android:id="@+id/action_segonFragment_to_tecerFragment"
+            app:destination="@id/tecerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tecerFragment"
+        android:name="com.danigelabert.codeforstudying.TecerFragment"
+        android:label="fragment_tecer"
+        tools:layout="@layout/fragment_tecer" >
+        <action
+            android:id="@+id/action_tecerFragment_to_lastFragment"
+            app:destination="@id/lastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastFragment"
+        android:name="com.danigelabert.codeforstudying.LastFragment"
+        android:label="fragment_last"
+        tools:layout="@layout/fragment_last" >
+        <action
+            android:id="@+id/action_lastFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+</navigation>

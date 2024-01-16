@@ -8,20 +8,19 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.danigelabert.codeforstudying.databinding.FragmentFirstBinding
+import com.danigelabert.codeforstudying.databinding.FragmentTecerBinding
 
-
-class FirstFragment : Fragment() {
-
-//    private lateinit var binding: FragmentFirstBinding
+class TecerFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentFirstBinding.inflate(inflater)
-        binding.button?.setOnClickListener{
-            findNavController().navigate(R.id.action_firstFragment_to_segonFragment, null)
+        val binding = FragmentTecerBinding.inflate(inflater)
+        binding.button3?.setOnClickListener{
+            findNavController().navigate(R.id.action_tecerFragment_to_lastFragment, null)
         }
         return binding.root
     }
+
 }
